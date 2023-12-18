@@ -75,8 +75,11 @@ const productMenu = (productType) => {
         showProductStock();
         break;
       case 2:
+        //example of a theme: pokemon, digimon or any other desing
         let theme = prompt(`Enter the theme of the ${productType}`);
+        // size example: S M L XL for t-shirt M L for mugs
         let size = prompt(`Enter the size of the ${productType}`);
+        // color example: any color excepto magenta
         let color = prompt(`Enter the color of the ${productType}`);
         let quantity = parseInt(prompt(`Enter the quantity of the ${productType} in stock`));
         let product = new Product(theme, productType, size, color, quantity);
